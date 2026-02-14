@@ -17,6 +17,7 @@
     "deployment": {
       "type": "object",
       "description": "Deployment configuration for the cognition task",
+      "required": ["github_workflow_names"],
       "properties": {
         "github_workflow_names": {
           "type": "array",

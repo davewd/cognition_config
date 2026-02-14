@@ -40,7 +40,7 @@ deployment:
 
 ### JSON Configuration
 
-Alternatively, you can use JSON format:
+Alternatively, you can use JSON format (note: empty string is a placeholder):
 
 ```json
 {
@@ -58,11 +58,12 @@ The configuration can be validated against the JSON schema defined in `cognition
 
 ## Examples
 
-### Example 1: Basic Configuration
+### Example 1: Basic Configuration (with placeholder)
 ```yaml
 cognition_group: "Cognition Talus"
 remote_url: "https://github.com/davewd/cognition_talus_mac.git"
 deployment:
+  # Note: Empty string is a placeholder. Replace with actual workflow names.
   github_workflow_names:
     - ""
 ```
