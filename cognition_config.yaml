@@ -1,0 +1,9 @@
+# Cognition Configuration
+# This file defines the configuration for managing various stages of execution
+# for cognitive tasks outsourced to binary execution
+
+cognition_group: "Cognition Talus"
+remote_url: "https://github.com/davewd/cognition_talus_mac.git"
+deployment:
+  github_workflow_names:
+    - ""

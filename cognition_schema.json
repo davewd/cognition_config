@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cognition Configuration Schema",
+  "description": "Schema for managing various stages of cognitive task execution outsourced to binary execution",
+  "type": "object",
+  "required": ["cognition_group", "remote_url", "deployment"],
+  "properties": {
+    "cognition_group": {
+      "type": "string",
+      "description": "Name of the cognition group or task category"
+    },
+    "remote_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Git repository URL for the cognition implementation"
+    },
+    "deployment": {
+      "type": "object",
+      "description": "Deployment configuration for the cognition task",
+      "properties": {
+        "github_workflow_names": {
+          "type": "array",
+          "description": "List of GitHub Actions workflow names to execute",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
