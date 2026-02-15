@@ -28,14 +28,14 @@ The cognition configuration consists of three main components:
 
 ### YAML Configuration
 
-Create a `cognition_config.yaml` file with the following structure:
+Create an `examples/cognition_config.yaml` file with the following structure:
 
 ```yaml
-cognition_group: "Cognition Talus"
-remote_url: "https://github.com/davewd/cognition_talus_mac.git"
+cognition_group: "Cognition Example"
+remote_url: "https://github.com/example/cognition_example.git"
 deployment:
   github_workflow_names:
-    - ""
+    - "build-and-test"
 ```
 
 ### JSON Configuration
@@ -44,10 +44,10 @@ Alternatively, you can use JSON format (note: empty string is a placeholder):
 
 ```json
 {
-  "cognition_group": "Cognition Talus",
-  "remote_url": "https://github.com/davewd/cognition_talus_mac.git",
+  "cognition_group": "Cognition Example",
+  "remote_url": "https://github.com/example/cognition_example.git",
   "deployment": {
-    "github_workflow_names": [""]
+    "github_workflow_names": ["build-and-test"]
   }
 }
 ```
@@ -58,14 +58,13 @@ The configuration can be validated against the JSON schema defined in `cognition
 
 ## Examples
 
-### Example 1: Basic Configuration (with placeholder)
+### Example 1: Basic Configuration
 ```yaml
-cognition_group: "Cognition Talus"
-remote_url: "https://github.com/davewd/cognition_talus_mac.git"
+cognition_group: "Cognition Example"
+remote_url: "https://github.com/example/cognition_example.git"
 deployment:
-  # Note: Empty string is a placeholder. Replace with actual workflow names.
   github_workflow_names:
-    - ""
+    - "build-and-test"
 ```
 
 ### Example 2: Multiple Workflow Names
