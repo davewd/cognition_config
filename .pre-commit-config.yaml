@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/sirosen/check-jsonschema
+    rev: 0.29.2
+    hooks:
+      - id: check-jsonschema
+        name: Validate example YAML schema
+        files: ^examples/cognition_config\.ya?ml$
+        args: ["--schemafile", "cognition_schema.json"]

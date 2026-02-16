@@ -6,8 +6,9 @@ This repository contains the cognition schema for managing various stages of exe
 
 ## Files
 - `cognition_schema.json` - JSON schema definition for cognition configuration
-- `cognition_config.yaml` - Example YAML configuration file
+- `cognition_config.yaml` - Base YAML configuration template
+- `examples/` - Example configurations, including `cognition_config.yaml`
 - `SCHEMA_DOCUMENTATION.md` - Detailed documentation about the schema structure and usage
 
 ## Quick Start
-See [SCHEMA_DOCUMENTATION.md](SCHEMA_DOCUMENTATION.md) for complete documentation on how to use the cognition schema.
+Review `examples/cognition_config.yaml` and see [SCHEMA_DOCUMENTATION.md](SCHEMA_DOCUMENTATION.md) for complete documentation on how to use the cognition schema.

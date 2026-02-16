@@ -1,0 +1,5 @@
+cognition_group: "Cognition Example"
+remote_url: "https://github.com/example/cognition_example.git"
+deployment:
+  github_workflow_names:
+    - "build-and-test"
